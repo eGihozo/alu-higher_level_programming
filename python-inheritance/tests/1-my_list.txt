@@ -1,0 +1,27 @@
+>>> MyList = __import__('1-my_list').MyList
+
+>>> my_list = MyList()
+>>> my_list.print_sorted()
+[]
+
+>>> my_list.append(3)
+>>> my_list.append(1)
+>>> my_list.append(2)
+>>> my_list.print_sorted()
+[1, 2, 3]
+
+>>> print(my_list)
+[3, 1, 2]
+
+>>> my_list = MyList([5, -1, 0, -10])
+>>> my_list.print_sorted()
+[-10, -1, 0, 5]
+>>> print(my_list)
+[5, -1, 0, -10]
+
+>>> my_list = MyList([1, 1, 1])
+>>> my_list.print_sorted()
+[1, 1, 1]
+
+>>> isinstance(my_list, list)
+True
