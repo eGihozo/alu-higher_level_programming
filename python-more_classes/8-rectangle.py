@@ -85,7 +85,7 @@ class Rectangle:
 
     def __del__(self):
         """Print a message and update the instance counter."""
-        Rectangle.number_of_instances -= 1
+        self.__class__.number_of_instances -= 1
         print("Bye rectangle...")
 
     @staticmethod
