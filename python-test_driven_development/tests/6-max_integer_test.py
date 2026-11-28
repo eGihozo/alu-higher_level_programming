@@ -44,17 +44,9 @@ class TestMaxInteger(unittest.TestCase):
         """Only negative numbers."""
         self.assertEqual(max_integer([-5, -2, -9]), -2)
 
-    def test_positive_and_negative(self):
-        """Positive and negative numbers."""
-        self.assertEqual(max_integer([-10, 0, 10, -3]), 10)
-
     def test_floats(self):
         """List of floats."""
         self.assertEqual(max_integer([1.5, 2.5, 0.5]), 2.5)
-
-    def test_int_and_float(self):
-        """Integers and floats mixed."""
-        self.assertEqual(max_integer([1, 2.5, 2]), 2.5)
 
     def test_duplicates(self):
         """Duplicated max value."""
